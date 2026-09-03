@@ -1,13 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 .navbar_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 24px 40px;
+  background-color: transparent;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.title_link {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  margin: 0;
+  color: #94a3b8;
+  letter-spacing: -0.5px;
+}
+
 .list_menu ul {
   list-style: none;
   margin: 0;
@@ -17,14 +30,16 @@
 }
 
 .list_menu li a {
-  font-family: "inter", "Arial Narrow Bold", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
   cursor: pointer;
   text-transform: capitalize;
   text-decoration: none;
-  color: #333;
+  color: #94a3b8;
   position: relative;
-  padding-bottom: 4px;
-  transition: color 0.3s ease;
+  padding-bottom: 6px;
+  transition: color 0.25s ease;
 }
 
 .list_menu li a::after {
@@ -34,11 +49,9 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #333;
+  background-color: #e64747;
   transform: scaleX(0);
-
   transform-origin: center;
-
   transition: transform 0.25s ease-out;
 }
 
@@ -47,12 +60,14 @@
 }
 
 .list_menu li a:hover {
-  color: #344ab4;
+  color: #94a3b8;
 }
 
-.title {
-  font-family: "inter", "Arial Narrow Bold", sans-serif;
-  margin: 0;
-  font-weight: 1000;
-  color: #f2e5e5;
+@media (max-width: 768px) {
+  .navbar_content {
+    padding: 20px;
+  }
+  .list_menu ul {
+    gap: 24px;
+  }
 }

@@ -1,13 +1,15 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import "../styles/global.css";
-import { Link } from "react-router-dom";
-import React from "react";
 
 function Navbar() {
   return (
-    <div className="navbar_content">
+    <nav className="navbar_content">
       <div className="title_menu">
-        <h2 className="title">Kiran</h2>
+        <Link to="/" className="title_link">
+          <h2 className="title">Kiran</h2>
+        </Link>
       </div>
       <div className="list_menu">
         <ul>
@@ -15,17 +17,17 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/">Skills</Link>
+            <Link to="/skills">Skills</Link>
           </li>
           <li>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 

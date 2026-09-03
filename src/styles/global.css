@@ -3,14 +3,32 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  background-color: #1b1a1a;
 
-  background-image: linear-gradient(to right, #1b1a1a, #ffffff);
-  background-repeat: no-repeat;
+  /* Creates horizontal white grid lines with opacity */
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
   background-attachment: fixed;
+
+  /* Grid square size */
+  background-size: 100% 40px;
+
+  animation: scrollGrid 3s linear infinite;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+@keyframes scrollGrid {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 40px; /* Moves exactly one grid unit down */
+  }
 }
