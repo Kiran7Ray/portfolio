@@ -1,0 +1,201 @@
+.aboutme_section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  gap: 48px;
+  font-family: "Inter", sans-serif;
+  color: #e5e5e5;
+}
+
+/* --- Top Row Layout: Left (Title & Pic) & Right (Bio & Edu) --- */
+.aboutme_left_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutme_left_section h3 {
+  color: #a3a3a3;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.aboutme_left_section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.profile_img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Container grid for the main 2-column header layout */
+@media (min-width: 769px) {
+  .aboutme_section {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    align-items: start;
+    gap: 60px;
+  }
+}
+
+/* --- Bio & Education --- */
+.aboutme_right_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 145px;
+}
+
+.part1,
+.part2 {
+  font-size: 1.1rem;
+  color: #d4d4d4;
+  line-height: 1.6;
+}
+
+.part1 span {
+  color: #871313;
+  font-weight: 600;
+}
+
+.part2 strong {
+  color: #ffffff;
+}
+
+/* Education Cards */
+.education {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.education > div {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 16px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* --- Interests Section --- */
+.interest {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.interest h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.interest ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interest li {
+  background: rgba(229, 11, 11, 0.1);
+  color: #b04747;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(229, 11, 11, 0.2);
+}
+
+/* --- Career Goal & Resume Button --- */
+.career_goal {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.career_goal p {
+  font-size: 1.1rem;
+  color: #d4d4d4;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.resume_button {
+  background-color: #94a3b8;
+  color: #000000;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.resume_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+  .aboutme_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .aboutme_left_section {
+    align-items: center;
+    width: 100%;
+  }
+
+  .aboutme_left_section h1 {
+    font-size: 2.8rem;
+  }
+
+  .education {
+    flex-direction: column;
+  }
+
+  .interest ul {
+    justify-content: center;
+  }
+
+  .career_goal {
+    align-items: center;
+    text-align: center;
+  }
+}
