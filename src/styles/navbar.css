@@ -2,10 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 40px;
-  background-color: transparent;
-  max-width: 1200px;
+  padding: 18px 40px;
+  background-color: #1b1a1a;
+  max-width: 100%;
   margin: 0 auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .title_link {
@@ -16,6 +22,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 1.6rem;
+  line-height: 1.2;
   margin: 0;
   color: #94a3b8;
   letter-spacing: -0.5px;
@@ -26,19 +33,20 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 40px;
+  gap: 32px;
 }
 
 .list_menu li a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
+  line-height: 1.2;
   cursor: pointer;
   text-transform: capitalize;
   text-decoration: none;
   color: #94a3b8;
   position: relative;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   transition: color 0.25s ease;
 }
 
@@ -49,7 +57,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #e64747;
+  background-color: #871313;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.25s ease-out;
@@ -65,9 +73,9 @@
 
 @media (max-width: 768px) {
   .navbar_content {
-    padding: 20px;
+    padding: 16px 20px;
   }
   .list_menu ul {
-    gap: 24px;
+    gap: 20px;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 112px 20px 72px;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
@@ -19,7 +19,8 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 8px;
+  line-height: 1.3;
+  margin: 0 0 10px;
 }
 
 .max_title {
@@ -27,7 +28,7 @@
   font-weight: 800;
   color: #ffffff;
   line-height: 1.1;
-  margin-bottom: 10px;
+  margin: 0 0 12px;
 }
 
 .its_k {
@@ -41,16 +42,17 @@
 
 .para1 {
   font-size: 1.5rem;
+  line-height: 1.35;
   color: #e5e5e5;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin: 0 0 20px;
 }
 
 .para2 {
   font-size: 1.1rem;
   color: #d4d4d4;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin: 0 0 34px;
 }
 
 /* Buttons Area */
@@ -66,10 +68,12 @@
 }
 
 .btn {
-  padding: 12px 28px;
+  min-height: 44px;
+  padding: 11px 24px;
   font-size: 1rem;
+  line-height: 1.2;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 7px;
   cursor: pointer;
   transition: all 0.25s ease;
 }
@@ -109,7 +113,8 @@
   color: #a3a3a3;
   cursor: pointer;
   font-size: 0.95rem;
-  padding: 6px 12px;
+  line-height: 1.2;
+  padding: 7px 10px;
   transition: color 0.2s ease;
 }
 
@@ -142,9 +147,9 @@
 .current_status {
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
+  padding: 18px 20px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
   max-width: 340px;
@@ -155,7 +160,8 @@
   text-transform: uppercase;
   color: #94a3b8;
   letter-spacing: 1px;
-  margin-bottom: 12px;
+  line-height: 1.3;
+  margin: 0 0 12px;
 }
 
 .tech_tags {
@@ -164,15 +170,18 @@
   justify-content: center;
   gap: 8px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .tag {
   display: inline-block;
   background: rgba(229, 11, 11, 0.1);
   color: #b04747;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  padding: 7px 13px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  line-height: 1.2;
   font-weight: 500;
 }
 
@@ -180,10 +189,10 @@
   .home_container {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 40px 20px;
+    padding: 96px 20px 48px;
   }
   .max_title {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
   .main_buttons,
   .social_links_button ul {

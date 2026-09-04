@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   background-color: #1b1a1a;
 
   /* Creates horizontal white grid lines with opacity */
@@ -22,6 +24,15 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
 }
 
 @keyframes scrollGrid {

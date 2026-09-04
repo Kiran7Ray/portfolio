@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/global.css";
 import "../styles/about.css";
 import myImage from "../assets/profilepic.jpg";
+import { FaSchool, FaUniversity, FaGraduationCap } from "react-icons/fa";
 
 function About() {
   return (
@@ -28,9 +29,35 @@ function About() {
         </p>
 
         <div className="education">
-          <div>College</div>
-          <br />
-          <div>School</div>
+          <h1>Education</h1>
+          <div>
+            <div className="icon-header">
+              <FaGraduationCap size={30} color="#E2A04A" />
+            </div>
+            <h2>Bachelor in Computer Engineering</h2>
+            <h3>National College of Engineering, Tribhuvan University</h3>
+            <p className="date">2026 - Present</p>
+          </div>
+
+          <div>
+            <div className="icon-header">
+              <FaUniversity size={30} color="#50E3C2" />
+            </div>
+            <h2>High School </h2>
+            <h3>Liverpool Int´l College</h3>
+            <p className="date">2021 - 2023</p>
+          </div>
+
+          <div>
+            <div className="icon-header">
+              <FaSchool size={30} color="#4A90E2" />
+            </div>
+            <h2>School </h2>
+            <h3>Occidental Public School</h3>
+
+            <h3>Anamnagar,Kathmandu</h3>
+            <p className="date"></p>
+          </div>
         </div>
       </div>
 
