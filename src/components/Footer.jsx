@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/global.css";
 import "../styles/footer.css";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="footer">
@@ -17,7 +18,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="social_btn"
               >
-                GitHub
+                <FaGithub />
               </a>
             </li>
             <li>
@@ -27,7 +28,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="social_btn"
               >
-                LinkedIn
+                <FaLinkedin />
               </a>
             </li>
             <li>
@@ -37,7 +38,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="social_btn"
               >
-                Facebook
+                <FaFacebook />
               </a>
             </li>
           </ul>

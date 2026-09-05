@@ -68,6 +68,10 @@
 }
 
 .btn {
+  /* Updated to flex to support accurate anchor layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 44px;
   padding: 11px 24px;
   font-size: 1rem;
@@ -75,6 +79,7 @@
   font-weight: 600;
   border-radius: 7px;
   cursor: pointer;
+  text-decoration: none; /* Ensure lines stay hidden */
   transition: all 0.25s ease;
 }
 
@@ -101,25 +106,35 @@
 }
 
 /* Social Buttons Row */
+.social_links_button {
+  margin-top: 24px; /* Gives nice spacing below action buttons */
+}
+
 .social_links_button ul {
   display: flex;
   list-style: none;
-  gap: 12px;
+  gap: 16px;
+  padding: 0; /* Clears browser default ul indent padding */
+  margin: 0;
 }
 
 .social_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   border: none;
-  color: #a3a3a3;
   cursor: pointer;
-  font-size: 0.95rem;
-  line-height: 1.2;
-  padding: 7px 10px;
-  transition: color 0.2s ease;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    opacity 0.2s ease;
 }
 
+/* Optional: Slight pop dynamic effect when hovering over your socials */
 .social_btn:hover {
-  color: #ffffff;
+  transform: translateY(-3px);
+  opacity: 0.85;
 }
 
 .right_section {
@@ -190,11 +205,14 @@
     flex-direction: column-reverse;
     text-align: center;
     padding: 96px 20px 48px;
+    gap: 40px;
   }
   .max_title {
     font-size: 2.7rem;
   }
-  .main_buttons,
+  .main_buttons {
+    justify-content: center;
+  }
   .social_links_button ul {
     justify-content: center;
   }
