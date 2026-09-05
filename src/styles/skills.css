@@ -29,7 +29,7 @@
 /* Responsive Card Grid */
 .skills_boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 24px;
 }
 
@@ -103,6 +103,10 @@
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+  .skills_section {
+    padding: 88px 16px 48px;
+  }
+
   .skills_header h1 {
     font-size: 2.8rem;
   }

@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
+  min-height: 72px;
   background: #1b1a1a;
   max-width: 100%;
   margin: 0 auto;
@@ -73,11 +74,34 @@
 
 @media (max-width: 768px) {
   .navbar_content {
-    padding: 15px 20px;
+    padding: 14px 16px;
+    min-height: 64px;
     font-weight: 500;
     font-size: 1.1rem;
   }
   .list_menu ul {
-    gap: 18px;
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 1.35rem;
+  }
+
+  .list_menu li a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar_content {
+    padding-inline: 12px;
+  }
+
+  .list_menu ul {
+    gap: 8px;
+  }
+
+  .list_menu li a {
+    font-size: 0.82rem;
   }
 }

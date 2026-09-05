@@ -16,6 +16,7 @@ body {
 
   /* Grid square size */
   background-size: 100% 40px;
+  overflow-x: hidden;
 
   animation: scrollGrid 3s linear infinite;
 }
@@ -33,6 +34,14 @@ h4,
 p,
 ul {
   margin-top: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
 }
 
 @keyframes scrollGrid {

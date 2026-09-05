@@ -1,11 +1,38 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { FaEnvelope, FaGithub, FaPaperPlane } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 import "../styles/global.css";
 import "../styles/contact.css";
+
 function Contact() {
+  const form = useRef();
+  const [isSending, setIsSending] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission handling logic here
+    setIsSending(true);
+    const currentTimestamp = new Date().toLocaleString();
+
+    emailjs
+      .sendForm("service_yxafxzo", "template_88e9hs6", form.current, {
+        publicKey: "_ZVUlJ5dJEb8lpzJ4",
+        templateParams: {
+          time: ` (Sent at: ${currentTimestamp})`,
+        },
+      })
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          alert("Message sent successfully!");
+          form.current.reset();
+          setIsSending(false);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          alert("Failed to send message, please try again.");
+          setIsSending(false);
+        },
+      );
   };
 
   return (
@@ -21,7 +48,7 @@ function Contact() {
         <p className="contact_body">
           I'm currently open to internships, collaborative projects, and
           learning opportunities. Whether you're a recruiter, a fellow
-          developer, or just want to say hello—
+          developer, or just want to say hello—{" "}
           <strong>my inbox is always open.</strong>
         </p>
 
@@ -55,13 +82,13 @@ function Contact() {
       </div>
 
       <div className="contact_right_section">
-        <form className="contact_form" onSubmit={handleSubmit}>
+        <form className="contact_form" ref={form} onSubmit={handleSubmit}>
           <div className="form_group">
             <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
-              name="name"
+              name="name" // Maps directly to {{name}}
               placeholder="Your name"
               required
             />
@@ -72,7 +99,7 @@ function Contact() {
             <input
               type="email"
               id="email"
-              name="email"
+              name="email" // Maps directly to {{email}}
               placeholder="name@email.com"
               required
             />
@@ -82,15 +109,15 @@ function Contact() {
             <label htmlFor="message">Message</label>
             <textarea
               id="message"
-              name="message"
-              rows="5"
+              name="message" // Maps directly to {{message}}
               placeholder="Your message..."
               required
             />
           </div>
 
-          <button type="submit" className="submit_btn">
-            Send Message <FaPaperPlane size={14} />
+          <button type="submit" className="submit_btn" disabled={isSending}>
+            {isSending ? "Sending..." : "Send Message"}{" "}
+            {!isSending && <FaPaperPlane size={14} />}
           </button>
         </form>
       </div>
