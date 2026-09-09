@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/global.css";
 import "../styles/about.css";
-import myImage from "../assets/profilepic.jpg";
+import myImage from "../assets/about_me.png";
 import { FaSchool, FaUniversity, FaGraduationCap } from "react-icons/fa";
 
 function About() {
