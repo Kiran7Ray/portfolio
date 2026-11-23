@@ -28,7 +28,7 @@ function Skills() {
 
       <div className="skills_section">
         <div className="skills_header">
-          <h3>WHAT I KNOW</h3>
+          <p className="skills_eyebrow">WHAT I KNOW</p>
           <h1>My Skills</h1>
         </div>
 

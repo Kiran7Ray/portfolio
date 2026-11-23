@@ -1,3 +1,19 @@
+.skip_link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 1100;
+  padding: 10px 14px;
+  color: #111827;
+  background: #ffffff;
+  border-radius: 6px;
+  transform: translateY(-150%);
+}
+
+.skip_link:focus {
+  transform: translateY(0);
+}
+
 .navbar_content {
   display: flex;
   justify-content: space-between;

@@ -46,7 +46,7 @@ function Contact() {
 
       <div className="contact_section">
         <div className="contact_left_section">
-          <h3>GET IN TOUCH</h3>
+          <p className="contact_eyebrow">GET IN TOUCH</p>
           <h1>Let's Connect</h1>
 
           <p className="contact_lead">
@@ -63,7 +63,7 @@ function Contact() {
           <div className="contact_info">
             <div className="info_card">
               <div className="icon_header">
-                <FaEnvelope size={22} color="#ffffff" />
+                <FaEnvelope size={22} color="#ffffff" aria-hidden="true" />
               </div>
               <div>
                 <h2>Email</h2>
@@ -73,7 +73,7 @@ function Contact() {
 
             <div className="info_card">
               <div className="icon_header">
-                <FaGithub size={22} color="#ffffff" />
+                <FaGithub size={22} color="#ffffff" aria-hidden="true" />
               </div>
               <div>
                 <h2>GitHub</h2>
@@ -81,6 +81,7 @@ function Contact() {
                   href="https://github.com/Kiran7Ray"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Kiran Phuyal on GitHub (opens in a new tab)"
                 >
                   Kiran7Ray
                 </a>

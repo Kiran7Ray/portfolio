@@ -36,7 +36,7 @@ function Home() {
         <div className="hero_section">
           {/* LEFT COLUMN: INTRO */}
           <div className="left_section">
-            <h3 className="mini_title">Hello, I'm</h3>
+            <p className="mini_title">Hello, I'm</p>
             <h1 className="max_title">
               <span className="its_k">K</span>iran{" "}
               <span className="last_name">Phuyal</span>
@@ -66,8 +66,10 @@ function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="social_btn"
+                      aria-label="Kiran Phuyal on GitHub (opens in a new tab)"
                     >
                       <FaGithub
+                        aria-hidden="true"
                         style={{ fontSize: "25px", color: "#f2f6f9" }}
                       />
                     </a>
@@ -78,8 +80,10 @@ function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="social_btn"
+                      aria-label="Kiran Phuyal on LinkedIn (opens in a new tab)"
                     >
                       <FaLinkedin
+                        aria-hidden="true"
                         style={{ fontSize: "25px", color: "#0A66C2" }}
                       />
                     </a>
@@ -90,8 +94,10 @@ function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="social_btn"
+                      aria-label="Kiran Phuyal on Facebook (opens in a new tab)"
                     >
                       <FaFacebook
+                        aria-hidden="true"
                         style={{ fontSize: "25px", color: "#1877F2" }}
                       />
                     </a>
@@ -108,7 +114,7 @@ function Home() {
             </div>
 
             <div className="current_status">
-              <h3>Currently exploring</h3>
+              <h2>Currently exploring</h2>
               <ul className="tech_tags">
                 <li>
                   <span className="tag">Python</span>
@@ -130,7 +136,7 @@ function Home() {
         {/* FEATURED PROJECTS SECTION */}
         <section className="featured_project">
           <div className="section_title_area">
-            <h3>Featured Projects</h3>
+            <h2>Featured Projects</h2>
           </div>
 
           <div className="project_grid">

@@ -16,7 +16,7 @@ function About() {
 
       <div className="aboutme_section">
         <div className="aboutme_left_section">
-          <h3>WHO I AM</h3>
+          <p className="about_eyebrow">WHO I AM</p>
           <h1>About Me</h1>
           <img src={myImage} alt="Kiran Phuyal pic" className="profile_img" />
         </div>
@@ -38,34 +38,32 @@ function About() {
           </p>
 
           <div className="education">
-            <h1>Education</h1>
+            <h2>Education</h2>
             <div>
               <div className="icon-header">
-                <FaGraduationCap size={30} color="#E2A04A" />
+                <FaGraduationCap size={30} color="#E2A04A" aria-hidden="true" />
               </div>
-              <h2>Bachelor in Computer Engineering</h2>
-              <h3>National College of Engineering, Tribhuvan University</h3>
+              <h3>Bachelor in Computer Engineering</h3>
+              <p>National College of Engineering, Tribhuvan University</p>
               <p className="date">2026 - Present</p>
             </div>
 
             <div>
               <div className="icon-header">
-                <FaUniversity size={30} color="#50E3C2" />
+                <FaUniversity size={30} color="#50E3C2" aria-hidden="true" />
               </div>
-              <h2>High School </h2>
-              <h3>Liverpool Int´l College</h3>
+              <h3>High School</h3>
+              <p>Liverpool Int´l College</p>
               <p className="date">2021 - 2023</p>
             </div>
 
             <div>
               <div className="icon-header">
-                <FaSchool size={30} color="#4A90E2" />
+                <FaSchool size={30} color="#4A90E2" aria-hidden="true" />
               </div>
-              <h2>School </h2>
-              <h3>Occidental Public School</h3>
-
-              <h3>Anamnagar,Kathmandu</h3>
-              <p className="date"></p>
+              <h3>School</h3>
+              <p>Occidental Public School</p>
+              <p>Anamnagar, Kathmandu</p>
             </div>
           </div>
         </div>

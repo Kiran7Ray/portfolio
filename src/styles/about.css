@@ -16,7 +16,7 @@
   align-items: flex-start;
 }
 
-.aboutme_left_section h3 {
+.about_eyebrow {
   color: #871313;
   font-size: 1.2rem;
   font-weight: 500;
@@ -103,14 +103,21 @@
 }
 
 /* Degree Title */
-.education h2 {
+.education > h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+
+.education h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0 0 4px 0;
 }
 
 /* Institution Name */
-.education h3 {
+.education > div > p {
   font-size: 1rem;
   font-weight: 400;
   color: #cccccc;
