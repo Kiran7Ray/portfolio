@@ -1,21 +1,28 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
->
-  <url>
-    <loc>https://kiranphuyal.com.np/</loc>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://kiranphuyal.com.np/about</loc>
-  </url>
-  <url>
-    <loc>https://kiranphuyal.com.np/skills</loc>
+    <loc>https://www.kiranphuyal.com.np/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://kiranphuyal.com.np/contact</loc>
+    <loc>https://www.kiranphuyal.com.np/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://www.kiranphuyal.com.np/skills</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kiranphuyal.com.np/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
