@@ -3,7 +3,7 @@ import profileImage from "../assets/profilepic.jpg";
 const site = {
   name: "Kiran Phuyal",
   title: "Kiran Phuyal | Computer Engineering Student",
-  url: "https://kiranphuyal.com.np",
+  url: "https://www.kiranphuyal.com.np",
   description:
     "Portfolio of Kiran Phuyal, a Computer Engineering student interested in artificial intelligence, data engineering, computer vision, and web development.",
   logo: "/logo.svg",
